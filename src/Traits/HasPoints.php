@@ -29,7 +29,7 @@ trait HasPoints
         ]);
     }
 
-    public function getPointsAttribute()
+    public function getCurrentPointsAttribute()
     {
         return $this->points()->type('add')->sum('count') - $this->points()->type('sub')->sum('count');
     }
