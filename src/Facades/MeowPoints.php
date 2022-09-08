@@ -5,12 +5,12 @@ namespace VendorName\Skeleton\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \VendorName\Skeleton\Skeleton
+ * @see \VendorName\Skeleton\MeowPoints
  */
-class Skeleton extends Facade
+class MeowPoints extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \VendorName\Skeleton\Skeleton::class;
+        return \VendorName\Skeleton\MeowPoints::class;
     }
 }

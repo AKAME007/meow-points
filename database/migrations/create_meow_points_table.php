@@ -8,11 +8,12 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('migration_table_name_table', function (Blueprint $table) {
+        Schema::create('meow_points', function (Blueprint $table) {
             $table->id();
-
-            // add fields
-
+            $table->morphs('owner');
+            $table->nullableMorphs('pointable');
+            $table->integer('count');
+            $table->enum('type', ['add', 'sub']);
             $table->timestamps();
         });
     }
