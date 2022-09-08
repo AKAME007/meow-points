@@ -1,12 +1,11 @@
 <?php
 
-
 namespace VendorName\Skeleton\Models;
-
 
 class Point extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = 'meow_points';
+
     protected $fillable = [
         'owner_id',
         'owner_type',
@@ -14,7 +13,8 @@ class Point extends \Illuminate\Database\Eloquent\Model
         'pointable_type',
         'count',
         'type',
-        ];
+    ];
+
     public function scopeType($query, $type)
     {
         return $query->where('type', $type);
