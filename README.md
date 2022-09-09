@@ -12,22 +12,17 @@ You can install the package via composer:
 composer require ahmedtofaha/meow-points
 ```
 
-You can publish and run the migrations with:
+You can publish all we need and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="meow-points-migrations"
+php artisan vendor:publish --provider="AhmedTofaha\MeowPoints\MeowPointsServiceProvider"
 php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="meow-points-config"
 ```
 
 This is the contents of the published config file:
 
 ```php
+# meow-points.php
 return [
     /*
     determine how much points equal to money amount

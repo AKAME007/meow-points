@@ -56,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MeowPointsServiceProvider"
+                "AhmedTofaha\\MeowPoints\\MeowPointsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "MeowPoints"
+                "AhmedTofaha\\MeowPoints\\Facades\\MeowPoints": "MeowPoints"
             }
         }
     },
