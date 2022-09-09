@@ -41,6 +41,7 @@ trait HasPoints
     {
         return $this->points()->type('add')->sum('count') - $this->points()->type('sub')->sum('count');
     }
+
     public function getCurrentAmountAttribute()
     {
         return $this->getCurrentPointsAttribute() / config('meow-points.amount');
