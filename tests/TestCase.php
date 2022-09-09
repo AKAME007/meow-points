@@ -2,9 +2,9 @@
 
 namespace AhmedTofaha\MeowPoints\Tests;
 
+use AhmedTofaha\MeowPoints\MeowPointsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AhmedTofaha\MeowPoints\MeowPointsServiceProvider;
 
 class TestCase extends Orchestra
 {
