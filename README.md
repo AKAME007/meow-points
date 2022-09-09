@@ -29,12 +29,17 @@ This is the contents of the published config file:
 
 ```php
 return [
+    /*
+    determine how much points equal to money amount
+    @type float
+    */
+    'amount' => 10.0,
 ];
 ```
 
 
 ## Usage
-
+### points system
 ```php
 # use the trait in your model
 class User extends Model
@@ -55,6 +60,27 @@ $user->points; // return collection of points history
 $user->points()->paginate(10); // return collection of points history with pagination
 # get the points  model has
 $user->current_points; // return the points of the user
+```
+### balance and amount system
+```php
+# config/meow-points.php
+return [
+    /*
+    determine how much points equal to money amount
+    @type float
+    */
+    'amount' => 12.5,
+];
+````
+
+```php
+$user->addAmount(100); // add 100 amount of money to the user
+$user->subAmount(100); // remove 100 amount of money from the user
+# and you can use for method after add or sub amount
+# to determine the amount money source or reason for the points change
+$user->addAmount(100)->for($prize); // add 100 amount of money to the user for the prize
+$user->subAmount(100)->for($payment); // remove 100 amount of money from the user for the payment
+$user->current_balance; // return the balance of the model
 ```
 
 
