@@ -37,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Ahmedtofaha\\MeowPoints\\": "src",
-            "Ahmedtofaha\\MeowPoints\\Database\\Factories\\": "database/factories"
+            "AhmedTofaha\\MeowPoints\\": "src",
+            "AhmedTofaha\\MeowPoints\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ahmedtofaha\\MeowPoints\\Tests\\": "tests"
+            "AhmedTofaha\\MeowPoints\\Tests\\": "tests"
         }
     },
     "scripts": {

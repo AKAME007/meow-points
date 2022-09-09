@@ -1,8 +1,8 @@
 <?php
 
-namespace Ahmedtofaha\MeowPoints\Traits;
+namespace AhmedTofaha\MeowPoints\Traits;
 
-use VendorName\Skeleton\Models\Point;
+use AhmedTofaha\MeowPoints\Models\Point;
 
 trait HasPoints
 {
@@ -27,8 +27,22 @@ trait HasPoints
         ]);
     }
 
+    public function addAmount($amount)
+    {
+        return $this->addPoints($amount * config('meow-points.amount'));
+    }
+
+    public function subAmount($amount)
+    {
+        return $this->subPoints($amount * config('meow-points.amount'));
+    }
+
     public function getCurrentPointsAttribute()
     {
         return $this->points()->type('add')->sum('count') - $this->points()->type('sub')->sum('count');
+    }
+    public function getCurrentAmountAttribute()
+    {
+        return $this->getCurrentPointsAttribute() / config('meow-points.amount');
     }
 }

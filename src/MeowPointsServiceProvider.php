@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmedtofaha\MeowPoints;
+namespace AhmedTofaha\MeowPoints;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

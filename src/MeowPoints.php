@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmedtofaha\MeowPoints;
+namespace AhmedTofaha\MeowPoints;
 
 class MeowPoints
 {

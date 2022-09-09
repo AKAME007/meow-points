@@ -1,8 +1,8 @@
 <?php
 
-namespace Ahmedtofaha\MeowPoints\Models;
+namespace AhmedTofaha\MeowPoints\Models;
 
-use Ahmedtofaha\MeowPoints\Traits\HasPoints;
+use AhmedTofaha\MeowPoints\Traits\HasPoints;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model

@@ -1,16 +1,16 @@
 <?php
 
-namespace VendorName\Skeleton\Facades;
+namespace AhmedTofaha\MeowPoints\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \VendorName\Skeleton\MeowPoints
+ * @see \AhmedTofaha\MeowPoints\MeowPoints
  */
 class MeowPoints extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \VendorName\Skeleton\MeowPoints::class;
+        return \AhmedTofaha\MeowPoints\MeowPoints::class;
     }
 }

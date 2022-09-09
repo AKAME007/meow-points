@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Models;
+namespace AhmedTofaha\MeowPoints\Models;
 
 class Point extends \Illuminate\Database\Eloquent\Model
 {
